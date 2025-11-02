@@ -1,0 +1,32 @@
+/* Puedes agregar estilos personalizados aquí para sobreescribir Bootstrap si es necesario */
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+/* --- Arreglo para el Footer Pegajoso (Sticky Footer) --- */
+
+body {
+    /* Le decimos al body que use Flexbox y organice a sus hijos en una columna */
+    display: flex;
+    flex-direction: column;
+
+    /* Asegura que el body ocupe como mínimo toda la altura de la ventana del navegador */
+    min-height: 100vh; /* vh = viewport height */
+}
+
+main {
+    /* Le dice al contenido principal que "crezca" y ocupe todo el espacio sobrante,
+       empujando el footer hacia abajo */
+    flex-grow: 1;
+}
+
+/* Estilos para botones flotantes */
+#dni-flotante, #soporte-flotante {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+#dni-flotante:hover, #soporte-flotante:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
