@@ -20,10 +20,10 @@ function getMoneda() {
 // --- FIN DE LA CONFIGURACIÓN GLOBAL ---
 
 // Configuración de la base de datos
-define('DB_HOST', 'localhost');
-define('DB_USER', 'root');
-define('DB_PASS', '');
-define('DB_NAME', 'tienda_sistema');
+define('DB_HOST', getenv('MYSQLHOST') ?: '127.0.0.1');
+define('DB_USER', getenv('MYSQLUSER') ?: 'root');
+define('DB_PASS', getenv('MYSQLPASSWORD') ?: '');
+define('DB_NAME', getenv('MYSQLDATABASE') ?: 'tienda_sistema');
 
 $conexion = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
 
