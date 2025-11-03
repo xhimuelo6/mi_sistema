@@ -1,0 +1,11 @@
+.git
+.github
+.vercel
+.claude
+node_modules
+.env
+*.md
+.gitignore
+.railwayignore
+vercel.json
+nixpacks.toml

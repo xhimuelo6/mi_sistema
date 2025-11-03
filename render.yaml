@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: mi-sistema
+    runtime: docker
+    repo: https://github.com/xhimuelo6/mi_sistema
+    branch: main
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: MYSQLHOST
+        sync: false
+      - key: MYSQLUSER
+        sync: false
+      - key: MYSQLPASSWORD
+        sync: false
+      - key: MYSQLDATABASE
+        sync: false
